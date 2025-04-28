@@ -1,8 +1,8 @@
 [project]
-name = "python-fastapi-template"
+name = "quran-detector-api"
 version = "0.1.0"
-description = "A template for a Python FastAPI service with uv & Devcontainer"
-authors = [{ name = "Ibraheem Tuffaha", email = "ibraheem.z.tuffaha@gmail.com" }]
+description = "FastAPI service for detecting & annotating Quranic verses"
+authors = [{ name = "Muntaser Abukhadijah", email = "abukhadijah.muntaser@gmail.com" }]
 license = "MIT"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -26,3 +26,6 @@ pretty = true
 
 [tool.pytest.ini_options]
 addopts = "--cov=app --cov-branch --cov-report=term --cov-report=html --cov-fail-under=100"
+
+[tool.poetry]
+package-mode = false
