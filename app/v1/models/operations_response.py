@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 
-from app.v1.models.verse_match import VerseMatch
+from app.v1.models.ayah_match import AyahMatch
 
 
 class OperationsResponse(BaseModel):
@@ -9,7 +9,7 @@ class OperationsResponse(BaseModel):
         None, title="Annotated Text",
         description="Diacriticized text with references, if 'annotate' was requested."
     )
-    matches: Optional[list[VerseMatch]] = Field(
-        None, title="Detected Verses",
-        description="List of verse matches, if 'detect' was requested."
+    matches: Optional[list[AyahMatch]] = Field(
+        None, title="Detected Ayaht",
+        description="List of ayah matches, if 'detect' was requested."
     )
