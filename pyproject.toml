@@ -20,18 +20,11 @@ dev = [
 [project.scripts]
 quran-detector-api = "quran_detector_api.main:run"
 
-[build-system]
-requires = ["setuptools>=69"]
-build-backend = "setuptools.build_meta"
-
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.uv.sources]
-quran-detector = { path = "../quran-detector" }
 
 [tool.ruff]
 line-length = 120

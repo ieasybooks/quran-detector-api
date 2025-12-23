@@ -13,7 +13,7 @@ class ApiSettings(BaseSettings):
     port: int = Field(default=8000, ge=1, le=65535)
     workers: int = Field(default=1, ge=1, le=32)
     log_level: str = Field(default="info")
-    cors_origins: str = Field(default="")
+    cors_origins: str = Field(default="*")
     root_path: str = Field(default="")
     docs_enabled: bool = Field(default=True)
     max_text_length: int = Field(default=5000, ge=1, le=5000)
