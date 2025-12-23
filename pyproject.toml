@@ -1,0 +1,45 @@
+[project]
+name = "quran-detector-api"
+version = "0.0.1"
+description = "FastAPI service exposing quran-detector APIs over HTTP."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115.0",
+  "orjson>=3.10.7",
+  "pydantic-settings>=2.5.2",
+  "uvicorn[standard]>=0.30.6",
+  "quran-detector==0.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.14.10",
+]
+
+[project.scripts]
+quran-detector-api = "quran_detector_api.main:run"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv.sources]
+quran-detector = { path = "../quran-detector" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = ["I"]

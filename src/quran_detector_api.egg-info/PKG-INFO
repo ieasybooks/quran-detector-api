@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: quran-detector-api
+Version: 0.0.1
+Summary: FastAPI service exposing quran-detector APIs over HTTP.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: orjson>=3.10.7
+Requires-Dist: pydantic-settings>=2.5.2
+Requires-Dist: uvicorn[standard]>=0.30.6
+Requires-Dist: quran-detector==0.0.1
+Provides-Extra: dev
+Requires-Dist: ruff>=0.14.10; extra == "dev"
+
+# quran-detector-api
+
+FastAPI service exposing `quran-detector` Python APIs over HTTP.
+
+## Requirements
+
+- `mise` (manages Python 3.12 + uv)
+
+## Local development
+
+```bash
+cd quran-detector-api
+mise install
+uv sync
+uv run quran-detector-api
+```
+
+Service listens on `http://127.0.0.1:8000` and serves OpenAPI docs at `/docs`.
+
+To enable auto-reload during development:
+
+```bash
+uv run uvicorn quran_detector_api.main:app --reload
+```
+
+## Production
+
+Run via `uvicorn` (or behind a process manager like systemd / Kubernetes):
+
+```bash
+uv run uvicorn quran_detector_api.main:app --host 0.0.0.0 --port 8000 --workers 2
+```
+
+## Environment variables
+
+- `QD_API_HOST` (default: `127.0.0.1`)
+- `QD_API_PORT` (default: `8000`)
+- `QD_API_WORKERS` (default: `1`)
+- `QD_API_LOG_LEVEL` (default: `info`)
+- `QD_API_CORS_ORIGINS` (default: empty; comma-separated list)
+- `QD_API_MAX_TEXT_LENGTH` (default: `5000`, max: `5000`)
+- `QD_API_MAX_BODY_BYTES` (default: `65536`)

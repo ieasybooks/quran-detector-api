@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/quran_detector_api/__init__.py
+src/quran_detector_api/main.py
+src/quran_detector_api/middleware.py
+src/quran_detector_api/schemas.py
+src/quran_detector_api/settings.py
+src/quran_detector_api.egg-info/PKG-INFO
+src/quran_detector_api.egg-info/SOURCES.txt
+src/quran_detector_api.egg-info/dependency_links.txt
+src/quran_detector_api.egg-info/entry_points.txt
+src/quran_detector_api.egg-info/requires.txt
+src/quran_detector_api.egg-info/top_level.txt
+src/quran_detector_api/routers/__init__.py
+src/quran_detector_api/routers/v1.py

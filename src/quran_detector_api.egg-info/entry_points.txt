@@ -1,0 +1,2 @@
+[console_scripts]
+quran-detector-api = quran_detector_api.main:run
