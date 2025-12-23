@@ -6,7 +6,7 @@ from contextlib import asynccontextmanager
 import quran_detector
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, ORJSONResponse
+from fastapi.responses import JSONResponse, ORJSONResponse, RedirectResponse
 from starlette.requests import Request
 
 from .middleware import BodySizeLimitMiddleware
@@ -64,6 +64,11 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
+
+
+@app.get("/")
+async def root() -> RedirectResponse:
+    return RedirectResponse(url="/docs")
 
 
 def run() -> None:
