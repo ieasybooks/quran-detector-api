@@ -404,14 +404,14 @@ wheels = [
 
 [[package]]
 name = "quran-detector"
-version = "0.0.1"
+version = "0.0.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "python-levenshtein" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8e/9b/b4efdc6af51323f11851477ee1811cc9f4d2cfdc0c8fd0a8dd515c64202b/quran_detector-0.0.1.tar.gz", hash = "sha256:f722af08cf974dec17c0bb9bf2ff9b6a54d026ca4893c8914229523b5a1f8dde", size = 304188, upload-time = "2025-12-23T14:26:26.203Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/0f/3bc2479a6a782326deb51fafd1aee8461f31be2703f791a1c62f7ef48095/quran_detector-0.0.2.tar.gz", hash = "sha256:fd0e39e1cbcf2855f33804db34c9c3aac34af5b4ff55c56233d451773ccd62de", size = 304771, upload-time = "2025-12-23T23:03:45.87Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9d/fc/30e3d5208c642fd1d11fb826faf2334c9e6ab319482ed0e12c721e22313a/quran_detector-0.0.1-py3-none-any.whl", hash = "sha256:1bb0423a4eda22a89db0835aecdea10fc6556bc9e1257b71727b005661d9a001", size = 314878, upload-time = "2025-12-23T14:26:24.951Z" },
+    { url = "https://files.pythonhosted.org/packages/d3/96/35ea5d58386c657b63509f10230e0b46c1b35991d6f6294cb81f5f197f69/quran_detector-0.0.2-py3-none-any.whl", hash = "sha256:6f4b60bda05959ed384ab2e058dff0dd07b470b6de34ac849cba2a861408d1d6", size = 315219, upload-time = "2025-12-23T23:03:44.377Z" },
 ]
 
 [[package]]
@@ -436,7 +436,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.115.0" },
     { name = "orjson", specifier = ">=3.10.7" },
     { name = "pydantic-settings", specifier = ">=2.5.2" },
-    { name = "quran-detector", specifier = "==0.0.1" },
+    { name = "quran-detector", specifier = "==0.0.2" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.14.10" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.30.6" },
 ]

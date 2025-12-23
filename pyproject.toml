@@ -9,7 +9,7 @@ dependencies = [
   "orjson>=3.10.7",
   "pydantic-settings>=2.5.2",
   "uvicorn[standard]>=0.30.6",
-  "quran-detector==0.0.1",
+  "quran-detector==0.0.2",
 ]
 
 [project.optional-dependencies]
