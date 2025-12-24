@@ -1,12 +1,4 @@
 <div align="center">
-  <a href="https://pypi.org/project/quran-detector-api" target="_blank"><img src="https://img.shields.io/pypi/v/quran-detector-api?label=PyPI%20Version&color=limegreen" /></a>
-  <a href="https://pypi.org/project/quran-detector-api" target="_blank"><img src="https://img.shields.io/pypi/pyversions/quran-detector-api?color=limegreen" /></a>
-  <a href="https://pepy.tech/project/quran-detector-api" target="_blank"><img src="https://static.pepy.tech/badge/quran-detector-api" /></a>
-
-  <a href="https://github.com/ieasybooks/quran-detector-api/actions/workflows/kamal-run.yml" target="_blank"><img src="https://github.com/ieasybooks/quran-detector-api/actions/workflows/kamal-run.yml/badge.svg" /></a>
-</div>
-
-<div align="center">
 
   [![ar](https://img.shields.io/badge/lang-ar-brightgreen.svg)](README.md)
   [![en](https://img.shields.io/badge/lang-en-red.svg)](README.en.md)
@@ -174,4 +166,3 @@ Run:
 ```bash
 docker run --rm -p 8000:8000 quran-detector-api
 ```
-
